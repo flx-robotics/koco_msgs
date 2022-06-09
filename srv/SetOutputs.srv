@@ -1,0 +1,4 @@
+koco_msgs/DigitalIO[] outputs
+---
+bool success
+string message

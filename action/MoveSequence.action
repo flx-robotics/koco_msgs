@@ -1,0 +1,13 @@
+# Define the goal
+bool execute_moves # Triggers the motion of all movements
+float32 speed # >NOT IMPLEMENTED YET< could slow down the speed of all motions in the sequence
+---
+# Define the result
+float32 execution_time
+float32 joint_norm_err
+float32 pose_norm_err
+geometry_msgs/Pose pose_err
+sensor_msgs/JointState joint_err
+---
+# Define a feedback message
+# To be defined

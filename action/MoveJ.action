@@ -1,0 +1,17 @@
+# Define the goal
+float32[] target_array # Joint space target written as array
+sensor_msgs/JointState target_joint # Joint space target written as JointState
+geometry_msgs/Pose target_pose # Cartesian space target written as Pose (inv_kin will happen)
+float32 speed # Speed in percentage 
+float64 blend_radius # This is ignored for single motions
+int32[] config_flags # Robot specific configuration flags for the motion
+---
+# Define the result
+float32 execution_time
+float32 joint_norm_err
+sensor_msgs/JointState joint_err
+---
+# Define a feedback message
+float32 execution_time
+float32 joint_norm_err
+sensor_msgs/JointState joint_err

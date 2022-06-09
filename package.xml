@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>koco_msgs</name>
+  <version>1.0.0</version>
+  <description>Messages, services and action files for the KoCo stack.</description>
+
+  <author email="timotej.gaspar@airnamics.com">Timotej Gaspar</author>
+  <author email="robert.bevec@airnamics.com">Robert Bevec</author>
+  <maintainer email="timotej.gaspar@airnamics.com">Timotej Gaspar</maintainer>
+  <maintainer email="filip.grcar@airnamics.com">Filip Grcar</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>industrial_msgs</depend>
+  <depend>moveit_msgs</depend>
+  <depend>trajectory_msgs</depend>
+
+  <exec_depend>message_runtime</exec_depend>
+
+</package>

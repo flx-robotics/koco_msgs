@@ -1,0 +1,16 @@
+# Define the goal
+geometry_msgs/Pose target_pose # Cartesian space target written as Pose
+float32[] target_array # Cartesian space target written as array
+float32 speed # Robot dependent speed parameter for the motion. The number here is as required by the robot.
+float64 blend_radius # This is ignored for single motions
+int32[] config_flags # Robot specific configuration flags for the motion
+---
+# Define the result
+float32 execution_time
+float32 pose_norm_err
+geometry_msgs/Pose pose_err
+---
+# Define a feedback message
+float32 execution_time
+float32 pose_norm_err
+geometry_msgs/Pose pose_err

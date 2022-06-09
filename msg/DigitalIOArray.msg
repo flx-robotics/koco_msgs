@@ -1,0 +1,1 @@
+koco_msgs/DigitalIO[] io_array
